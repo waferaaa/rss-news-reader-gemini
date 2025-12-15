@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS News Reader with Gemini AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RSS News Reader</h1>
+            <p class="subtitle">Gemini AI によるタグ自動生成付きニュースリーダー</p>
+        </header>
+
+        <div class="category-selector">
+            <h2>カテゴリを選択</h2>
+            <div class="category-buttons" id="categoryButtons">
+                <!-- カテゴリボタンはJavaScriptで動的に生成 -->
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>ニュースを取得中...</p>
+        </div>
+
+        <div class="news-container" id="newsContainer">
+            <div class="welcome-message">
+                <p>上記からカテゴリを選択してニュースを表示してください</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
