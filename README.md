@@ -149,8 +149,10 @@ Gemini APIキーを取得し、環境変数として設定します。
 プロジェクトのルートディレクトリに`.env`ファイルを作成し、以下の内容を記述してください：
 
 ```
-GEMINI_API_KEY=AIzaSyCog9IpjHIDgD04RgqyADzYAU_5YukSIcw
+GEMINI_API_KEY=your-api-key-here
 ```
+
+> **重要**: `your-api-key-here`の部分を、実際のGemini APIキーに置き換えてください。
 
 **方法2: 環境変数として直接設定**
 
